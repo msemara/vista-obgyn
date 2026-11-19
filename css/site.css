@@ -334,3 +334,8 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .closing-copy { display: grid; gap: 12px; max-width: 60ch; }
 .closing-copy p { color: #F9DCEA; font-size: 1.1rem; }
 .closing a:focus-visible { outline-color: var(--white); }
+.symptoms.two { grid-template-columns: 1fr 1fr; }
+@media (max-width: 560px) { .symptoms.two { grid-template-columns: 1fr; } }
+.symptoms a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--plum); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.symptoms a:hover { color: var(--plum); }
+.symptoms a::after { content: " \2192"; color: var(--plum); }

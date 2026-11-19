@@ -339,3 +339,5 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .symptoms a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--plum); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .symptoms a:hover { color: var(--plum); }
 .symptoms a::after { content: " \2192"; color: var(--plum); }
+.soon { display: inline-flex; align-items: center; gap: 8px; width: fit-content; background: var(--sage); color: var(--ink); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; padding: 6px 14px 6px 12px; border-radius: 999px; }
+.soon::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--plum); }

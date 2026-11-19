@@ -9,6 +9,11 @@ index.html                 Homepage
 endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
 fibroids/index.html        Uterine fibroids condition page (served at /fibroids/)
 pelvic-pain/index.html     Pelvic pain condition page (served at /pelvic-pain/)
+pcos/, infertility/, heavy-periods/, abnormal-pap-smear/,
+menopause/, hormone-therapy/, vaginal-infections/
+                           "Full page coming soon" placeholders (noindex). Replace
+                           each index.html with the full page when it is ready and
+                           remove the robots noindex tag.
 css/site.css               Shared styles for every page
 img/                       Photography referenced by the pages
 ```

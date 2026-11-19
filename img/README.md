@@ -22,6 +22,6 @@ Photos used by `index.html`. Each one is cropped to its slot and saved as an opt
 | `ultrasound.jpg` | Gallery under Dr. Shilad | As supplied |
 | `band.jpg` | Full-width band | As supplied |
 | `infections.jpg` | Conditions tile | Hand, syringe and vial, 4:5 |
-| `harries-pavilion.jpg` | Location card | As supplied |
+| `harries-pavilion.jpg` | Surgery section (photo beside the condition list) | As supplied |
 
-The one slot still marked "Photo slot" in `index.html` is the operating room / da Vinci console in the surgery section.
+The location card shows a live Google Map of 1 Bay Avenue instead of a photo.

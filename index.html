@@ -266,6 +266,8 @@ td.price { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .hours dd { margin: 0; color: var(--ink-soft); }
 .loc.one { grid-template-columns: 1.1fr 1fr 1fr; gap: 32px; align-items: start; }
 .loc.one .slot { min-height: 240px; align-self: stretch; }
+.map { min-height: 260px; align-self: stretch; border-radius: 18px; overflow: hidden; background: var(--sage); }
+.map iframe { display: block; width: 100%; height: 100%; min-height: 260px; border: 0; }
 .loc-col { display: grid; gap: 16px; }
 @media (max-width: 760px) { .loc.one { grid-template-columns: 1fr; } }
 
@@ -456,7 +458,7 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
       </div>
     </div>
     <div class="stack">
-      <div class="slot " role="img" aria-label="Dr. Shilad at the da Vinci surgical console"><p class="photo-note"><b>Photo slot.</b> Dr. Shilad in the operating room or at the da Vinci console</p></div>
+      <div class="slot" role="img" aria-label="Waiting area and front desk at Vista Women's Health" style="background-image:url(img/harries-pavilion.jpg);background-size:cover;background-position:center 45%"></div>
     <ul class="checks">
       <li><b>Endometriosis</b><span>Diagnosis by laparoscopy and removal of endometriosis tissue, with medication options discussed first where they fit. <a href="/endometriosis/">Endometriosis care</a></span></li>
       <li><b>Fibroids</b><span>Evaluation with pelvic ultrasound and a plan that runs from medication to surgery, chosen with you. <a href="/fibroids/">Fibroid care</a></span></li>
@@ -628,7 +630,7 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
       <h2>Find us in Montclair.</h2>
     </div>
     <article class="loc one">
-      <div class="slot" role="img" aria-label="Waiting area and front desk at the Harries Pavilion, 1 Bay Avenue, Montclair" style="background-image:url(img/harries-pavilion.jpg);background-size:cover;background-position:center 45%"></div>
+      <div class="map"><iframe title="Map: Vista Women's Health, 1 Bay Avenue, 2nd Floor, Suite 5, Montclair, NJ 07042" src="https://maps.google.com/maps?q=1%20Bay%20Avenue%2C%20Montclair%2C%20NJ%2007042&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
       <div class="loc-col">
         <h3>Harries Pavilion</h3>
         <address>1 Bay Avenue<br>2nd Floor, Suite 5<br>Montclair, NJ 07042</address>

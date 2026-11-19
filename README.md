@@ -34,7 +34,7 @@ menopause/, hormone-therapy/, vaginal-infections/
                            each index.html with the full page when it is ready and
                            remove the robots noindex tag.
 css/site.css               Shared styles for every page
-js/site.js                 Nav dropdown behavior (loaded on every page)
+js/site.js                 Nav dropdowns and the phone/tablet menu (loaded on every page)
 img/                       Photography referenced by the pages
 ```
 

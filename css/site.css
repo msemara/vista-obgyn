@@ -372,3 +372,8 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .symptoms a::after { content: " \2192"; color: var(--plum); }
 .soon { display: inline-flex; align-items: center; gap: 8px; width: fit-content; background: var(--sage); color: var(--ink); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; padding: 6px 14px 6px 12px; border-radius: 999px; }
 .soon::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--plum); }
+.list-title { font-size: 1.15rem; margin: 0 0 18px; }
+.class-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; border-top: 1px solid var(--ink); }
+.class-list li { padding: 14px 0; border-bottom: 1px solid var(--line); font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.25; }
+.note { color: var(--ink-soft); font-size: 0.98rem; }
+.photo-wide { min-height: 0; aspect-ratio: 745 / 345; align-self: center; }

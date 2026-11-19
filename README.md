@@ -9,6 +9,8 @@ index.html                 Homepage
 endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
 fibroids/index.html        Uterine fibroids condition page (served at /fibroids/)
 pelvic-pain/index.html     Pelvic pain condition page (served at /pelvic-pain/)
+our-maternity-services/index.html
+                           Maternity services page (served at /our-maternity-services/)
 pcos/, infertility/, heavy-periods/, abnormal-pap-smear/,
 menopause/, hormone-therapy/, vaginal-infections/
                            "Full page coming soon" placeholders (noindex). Replace

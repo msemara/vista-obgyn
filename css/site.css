@@ -28,6 +28,7 @@ body {
 img { max-width: 100%; }
 a { color: var(--plum); }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--plum); outline-offset: 3px; border-radius: 4px; }
+.btn:focus-visible { border-radius: 999px; }
 h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.05; letter-spacing: -0.02em; }
 h2 { font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 700; }
 h3 { font-size: 1.35rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }

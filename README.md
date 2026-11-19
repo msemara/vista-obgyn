@@ -14,6 +14,7 @@ classes/index.html         Childbirth and newborn classes (served at /classes/)
 doula-support/index.html   Doula support (served at /doula-support/)
 important-resources/index.html
                            Parent resources with external links (served at /important-resources/)
+events/index.html          Upcoming and past events (served at /events/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

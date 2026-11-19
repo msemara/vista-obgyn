@@ -435,3 +435,23 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .resource-actions { margin-top: 4px; }
 .btn-ext { padding: 11px 20px; }
 @media (max-width: 520px) { .resource { padding: 24px 20px; } }
+/* Events page */
+.empty-state { background: var(--white); border: 1px dashed var(--line); border-radius: 18px; padding: 32px; display: grid; gap: 6px; max-width: 760px; }
+.empty-title { font-family: var(--display); font-weight: 700; font-size: 1.35rem; }
+.empty-state p:not(.empty-title) { color: var(--ink-soft); }
+.events { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.event { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: grid; grid-template-columns: 84px 260px 1fr; gap: 28px; align-items: start; }
+.event-date { display: grid; justify-items: center; text-align: center; border: 1.5px solid var(--ink); border-radius: 14px; padding: 10px 6px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.event-date b { font-family: var(--display); font-size: 2.2rem; line-height: 1; letter-spacing: -0.02em; color: var(--plum); }
+.event-photo { aspect-ratio: 4 / 3; border-radius: 14px; background: var(--sage) center / cover no-repeat; }
+.event-body { display: grid; gap: 8px; }
+.event-when { font-weight: 700; font-size: 0.92rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.event-body h3 a { color: var(--ink); text-decoration: none; }
+.event-body h3 a:hover { color: var(--plum); text-decoration: underline; }
+.event-sub { font-weight: 600; color: var(--plum); }
+.event-body > p:not(.event-when):not(.event-sub):not(.event-price) { color: var(--ink-soft); }
+.event-price { font-family: var(--display); font-weight: 700; }
+.event .more { font-weight: 700; text-decoration: none; }
+.event .more:hover { text-decoration: underline; }
+@media (max-width: 860px) { .event { grid-template-columns: 72px 1fr; } .event-photo { display: none; } }
+@media (max-width: 420px) { .event { grid-template-columns: 1fr; gap: 14px; } .event-date { justify-self: start; grid-auto-flow: column; gap: 8px; align-items: baseline; padding: 8px 14px; } .event-date b { font-size: 1.4rem; } }

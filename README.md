@@ -5,13 +5,15 @@ Website for Vista Women's Health, an OB/GYN and minimally invasive gynecologic s
 ## Structure
 
 ```
-index.html      Homepage (static HTML + inline CSS, no build step)
-img/            Photography referenced by the pages
+index.html                 Homepage
+endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
+css/site.css               Shared styles for every page
+img/                       Photography referenced by the pages
 ```
 
 ## Local preview
 
-No build tools are required. Serve the folder with any static server:
+No build tools are required. Pages use root-relative paths (`/css/site.css`, `/img/...`), so serve the folder rather than opening files directly:
 
 ```bash
 python3 -m http.server 8000

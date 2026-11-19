@@ -572,3 +572,12 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 @media (max-width: 360px) { .menu-btn span { display: none; } .menu-btn { padding: 8px 10px; } }
 @media (min-width: 981px) { .mmenu { display: none !important; } }
 .site-head .nav { margin-left: auto; }
+/* Footer office hours */
+.foot > div:first-child { display: grid; gap: 14px; align-content: start; }
+.foot > div:first-child .brand { margin-bottom: 0; }
+.foot-hours { margin-top: 4px; }
+.foot-hours-title { display: flex; align-items: center; gap: 8px; font-weight: 700; color: var(--paper); margin-bottom: 8px; }
+.foot-hours-title svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; flex: none; }
+.foot-hours dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 4px 18px; font-variant-numeric: tabular-nums; }
+.foot-hours dt { color: var(--paper); font-weight: 600; }
+.foot-hours dd { margin: 0; color: #C9D8D2; white-space: nowrap; }

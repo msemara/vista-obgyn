@@ -15,6 +15,8 @@ doula-support/index.html   Doula support (served at /doula-support/)
 important-resources/index.html
                            Parent resources with external links (served at /important-resources/)
 events/index.html          Upcoming and past events (served at /events/)
+fourth-trimester-fridays/  Fourth Trimester Friday postpartum group, with a weekly
+                           .ics calendar file (served at /fourth-trimester-fridays/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

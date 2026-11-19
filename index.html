@@ -237,11 +237,34 @@ section { padding: 84px 0; }
 /* Reviews */
 .reviews { background: var(--ink); color: var(--paper); }
 .reviews .lede { color: #C9D8D2; }
-.rev-grid { display: grid; grid-template-columns: auto 1fr; gap: 48px; align-items: center; }
-.score { font-family: var(--display); font-weight: 800; font-size: clamp(5rem, 14vw, 9rem); line-height: 0.85; letter-spacing: -0.05em; color: #F3B6D3; }
-.score small { display: block; font: 600 1rem var(--body); letter-spacing: 0; color: var(--paper); margin-top: 14px; }
+.reviews { overflow: hidden; }
+.rev-top { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: end; }
 .rev-copy { display: grid; gap: 18px; }
-@media (max-width: 760px) { .rev-grid { grid-template-columns: 1fr; gap: 24px; } }
+.scores { display: flex; gap: 44px; }
+.score { font-family: var(--display); font-weight: 800; font-size: clamp(3.4rem, 7vw, 5.2rem); line-height: 0.9; letter-spacing: -0.04em; color: #F3B6D3; }
+.score span { font-size: 0.42em; letter-spacing: 0; color: #C9D8D2; margin-left: 2px; }
+.scores .stars { margin: 12px 0 6px; }
+.score-label { font-weight: 600; color: var(--paper); }
+.marquee { margin-top: 52px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+.track { list-style: none; margin: 0; padding: 0; display: flex; width: max-content; animation: rev-scroll 110s linear infinite; }
+.track > li { display: flex; padding: 0 10px; }
+.marquee:hover .track, .marquee:focus-within .track, .marquee.paused .track { animation-play-state: paused; }
+@keyframes rev-scroll { to { transform: translateX(-50%); } }
+.rcard { width: 340px; background: #1E3F38; border: 1px solid #2E4A44; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.rcard .stars { margin: 0; width: 90px; height: 18px; }
+.rcard blockquote { margin: 0; color: var(--paper); font-size: 1rem; line-height: 1.5; }
+.rcard-name { margin-top: auto; font-weight: 700; color: #F3B6D3; }
+.rev-actions { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.marquee-toggle { margin-left: auto; background: none; border: 0; padding: 8px 0; color: #C9D8D2; font: 600 0.95rem var(--body); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.marquee-toggle:hover { color: var(--white); }
+@media (max-width: 860px) { .rev-top { grid-template-columns: 1fr; gap: 28px; align-items: start; } }
+@media (max-width: 520px) { .rcard { width: 280px; } .scores { gap: 28px; } .marquee-toggle { margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+  .track > li[aria-hidden] { display: none; }
+  .marquee { overflow-x: auto; -webkit-mask-image: none; mask-image: none; padding: 0 14px 12px; }
+  .marquee-toggle { display: none; }
+}
 
 /* Classes */
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--white); }
@@ -559,16 +582,58 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 </div>
 
 <section class="reviews" id="reviews">
-  <div class="wrap rev-grid">
-    <p class="score">4.4<small>out of 5 on Google, 58 reviews</small></p>
+  <div class="wrap rev-top">
     <div class="rev-copy">
       <h2>Patients say they feel heard here.</h2>
       <p class="lede">Reviews most often mention the front desk, the care during pregnancy and how thoroughly questions get answered. Read them in patients' own words.</p>
-      <div class="cta-row">
-        <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Vista+Women%27s+Health+PA+Montclair+NJ">Read Google reviews</a>
-        <a class="btn btn-ghost" style="border-color:#F4F6F1;color:#F4F6F1" href="https://www.zocdoc.com/practice/vista-womens-health-102661">Reviews on Zocdoc</a>
+    </div>
+    <div class="scores">
+      <div class="score-item">
+        <p class="score">4.4<span>/5</span></p>
+        <i class="stars" style="--pct:88.3%" role="img" aria-label="Rated 4.4 out of 5 stars"></i>
+        <p class="score-label">on Google</p>
+      </div>
+      <div class="score-item">
+        <p class="score">4.77<span>/5</span></p>
+        <i class="stars" style="--pct:94.5%" role="img" aria-label="Rated 4.77 out of 5 stars"></i>
+        <p class="score-label">on Zocdoc</p>
       </div>
     </div>
+  </div>
+  <div class="marquee" role="region" aria-label="Patient reviews">
+    <ul class="track">
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I highly recommend Dr. Shilad and his amazing team. I moved to Jersey last year and had to find a new OBGYN and I am so glad I came across Vista Women's health. Everyone is so caring, kind, professional and organized! Also, Dr. Shilad performed my surgery. He made me feel so comfortable through the whole process. Thank you Dr. Shilad and your lovely team!&rdquo;</blockquote><p class="rcard-name">Brooke</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I’ve had such positive experiences at Vista Women’s Health. Everyone is kind, attentive, and takes the time to really listen. When I recently changed jobs, they went above and beyond to help me navigate my insurance options so I could continue receiving care with them. It made what felt like a stressful decision so much easier.&rdquo;</blockquote><p class="rcard-name">Alexandra</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr Aimen Shalid, Thank you so much for everything. I hope you know I am your biggest fan. I love how you talk and everything, how you handle the entire delivery. I was focused on your voice to push out the baby and that helped me. You are a fabulous doctor and I am so grateful to you that you delivered both my babies naturally&rdquo;</blockquote><p class="rcard-name">Faeza</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;My experience was awesome, the staff was friendly and professional. I felt comfortable and I would recommend them to anyone.&rdquo;</blockquote><p class="rcard-name">Mazika</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Love him. Super attentive. I feel like his only patient which is great. I'd recommend him to anyone.&rdquo;</blockquote><p class="rcard-name">Philana</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad takes time to listen to the patient and their concerns.&rdquo;</blockquote><p class="rcard-name">Chantal</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I loved Dr Shilad! He approached my health concerns with compassion and patience. I have had pelvic pain for years and finally am getting the relief I was looking for! Awesome staff-friendly &amp; clean office Zen like atmosphere!!&rdquo;</blockquote><p class="rcard-name">LL</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;He was amazing! Took the time to really listen to all my concerns. I didn’t feel rushed or anything. He also explained everything thoroughly. This is probably the best experience I have ever had with a doctor. Will be recommending him to everyone I know!&rdquo;</blockquote><p class="rcard-name">Brittney</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad is one of the nicest, most thorough doctors I’ve ever seen. I saw him for an urgent issue and chose him based on ha reviews. He patiently asked questions and listened to my answers, was thoroughly committed to finding answers for me, and made me feel like I’d known him for years after just a few minutes. He will now be my regular GYN for sure.&rdquo;</blockquote><p class="rcard-name">Amanda</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad and his staff are wonderful, they make you feel welcome the minute you walk into the office. The care and support you receive from the entire staff is beyond anything I’ve experienced before. They have made my pregnancy experience a wonderful one from the amazing care I received from Dr.Shilad to my first doula experience with AnnMarie. If you are looking for a great women’s health this is the place I highly recommend.&rdquo;</blockquote><p class="rcard-name">Maggie</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Very helpful, listened to everything I had to say, as well as answered any questions I had. Very very pleased with my visit.&rdquo;</blockquote><p class="rcard-name">Ebony</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Like visiting an old friend.&rdquo;</blockquote><p class="rcard-name">MP</p></article></li>
+      <li><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Very good visit. Dr. Shilad makes you feel comfortable while being professional and caring!&rdquo;</blockquote><p class="rcard-name">June</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I highly recommend Dr. Shilad and his amazing team. I moved to Jersey last year and had to find a new OBGYN and I am so glad I came across Vista Women's health. Everyone is so caring, kind, professional and organized! Also, Dr. Shilad performed my surgery. He made me feel so comfortable through the whole process. Thank you Dr. Shilad and your lovely team!&rdquo;</blockquote><p class="rcard-name">Brooke</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I’ve had such positive experiences at Vista Women’s Health. Everyone is kind, attentive, and takes the time to really listen. When I recently changed jobs, they went above and beyond to help me navigate my insurance options so I could continue receiving care with them. It made what felt like a stressful decision so much easier.&rdquo;</blockquote><p class="rcard-name">Alexandra</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr Aimen Shalid, Thank you so much for everything. I hope you know I am your biggest fan. I love how you talk and everything, how you handle the entire delivery. I was focused on your voice to push out the baby and that helped me. You are a fabulous doctor and I am so grateful to you that you delivered both my babies naturally&rdquo;</blockquote><p class="rcard-name">Faeza</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;My experience was awesome, the staff was friendly and professional. I felt comfortable and I would recommend them to anyone.&rdquo;</blockquote><p class="rcard-name">Mazika</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Love him. Super attentive. I feel like his only patient which is great. I'd recommend him to anyone.&rdquo;</blockquote><p class="rcard-name">Philana</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad takes time to listen to the patient and their concerns.&rdquo;</blockquote><p class="rcard-name">Chantal</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;I loved Dr Shilad! He approached my health concerns with compassion and patience. I have had pelvic pain for years and finally am getting the relief I was looking for! Awesome staff-friendly &amp; clean office Zen like atmosphere!!&rdquo;</blockquote><p class="rcard-name">LL</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;He was amazing! Took the time to really listen to all my concerns. I didn’t feel rushed or anything. He also explained everything thoroughly. This is probably the best experience I have ever had with a doctor. Will be recommending him to everyone I know!&rdquo;</blockquote><p class="rcard-name">Brittney</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad is one of the nicest, most thorough doctors I’ve ever seen. I saw him for an urgent issue and chose him based on ha reviews. He patiently asked questions and listened to my answers, was thoroughly committed to finding answers for me, and made me feel like I’d known him for years after just a few minutes. He will now be my regular GYN for sure.&rdquo;</blockquote><p class="rcard-name">Amanda</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Dr. Shilad and his staff are wonderful, they make you feel welcome the minute you walk into the office. The care and support you receive from the entire staff is beyond anything I’ve experienced before. They have made my pregnancy experience a wonderful one from the amazing care I received from Dr.Shilad to my first doula experience with AnnMarie. If you are looking for a great women’s health this is the place I highly recommend.&rdquo;</blockquote><p class="rcard-name">Maggie</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Very helpful, listened to everything I had to say, as well as answered any questions I had. Very very pleased with my visit.&rdquo;</blockquote><p class="rcard-name">Ebony</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Like visiting an old friend.&rdquo;</blockquote><p class="rcard-name">MP</p></article></li>
+      <li aria-hidden="true"><article class="rcard"><i class="stars" style="--pct:100%" role="img" aria-label="Rated 5 out of 5 stars"></i><blockquote>&ldquo;Very good visit. Dr. Shilad makes you feel comfortable while being professional and caring!&rdquo;</blockquote><p class="rcard-name">June</p></article></li>
+    </ul>
+  </div>
+  <div class="wrap rev-actions">
+    <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Vista+Women%27s+Health+PA+Montclair+NJ">Read Google reviews</a>
+    <a class="btn btn-ghost" style="border-color:#F4F6F1;color:#F4F6F1" href="https://www.zocdoc.com/practice/vista-womens-health-102661">Reviews on Zocdoc</a>
+    <button class="marquee-toggle" type="button" aria-pressed="false">Pause reviews</button>
   </div>
 </section>
 
@@ -713,6 +778,18 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
     </div>
   </div>
 </footer>
+<script>
+(function () {
+  var marquee = document.querySelector('.marquee');
+  var toggle = document.querySelector('.marquee-toggle');
+  if (!marquee || !toggle) return;
+  toggle.addEventListener('click', function () {
+    var paused = marquee.classList.toggle('paused');
+    toggle.setAttribute('aria-pressed', String(paused));
+    toggle.textContent = paused ? 'Play reviews' : 'Pause reviews';
+  });
+})();
+</script>
 
 <div class="mbar" aria-label="Quick actions">
   <a class="btn btn-ghost" href="tel:+19736559662">Call</a>

@@ -475,3 +475,24 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 @media (max-width: 420px) { .details-card { grid-template-columns: 1fr; } .details-card div:nth-child(2) { border-top: 1px solid var(--line); } .details-card div:nth-child(even) { border-left: 0; } }
 .past-note { font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
 .page-hero-photo.is-wide { height: auto; min-height: 0; aspect-ratio: 745 / 400; align-self: center; border-radius: 18px; }
+/* Blog listing */
+.posts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.post { display: flex; }
+.post-link { display: flex; flex-direction: column; width: 100%; background: var(--white); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; color: var(--ink); text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.post-link:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(20,48,43,.10); }
+.post-link:hover .post-title { color: var(--plum); }
+.post-img { display: block; aspect-ratio: 16 / 10; background: var(--sage) center / cover no-repeat; }
+.post-body { display: flex; flex-direction: column; gap: 10px; padding: 22px 24px 24px; flex: 1; }
+.post-tag { align-self: flex-start; background: var(--sage); color: var(--ink); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.post-title { font-family: var(--display); font-weight: 700; font-size: 1.3rem; line-height: 1.2; letter-spacing: -0.01em; transition: color .15s; }
+.post-excerpt { color: var(--ink-soft); font-size: 0.98rem; }
+.post-more { margin-top: auto; padding-top: 4px; font-weight: 700; color: var(--plum); }
+.post.feature { grid-column: 1 / -1; }
+.post.feature .post-link { flex-direction: row; }
+.post.feature .post-img { flex: 1.15; aspect-ratio: auto; min-height: 340px; }
+.post.feature .post-body { flex: 1; padding: 40px; justify-content: center; }
+.post.feature .post-title { font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.post.feature .post-excerpt { font-size: 1.08rem; }
+.post.feature .post-more { margin-top: 6px; }
+@media (max-width: 960px) { .posts { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .posts { grid-template-columns: 1fr; } .post.feature .post-link { flex-direction: column; } .post.feature .post-img { min-height: 0; aspect-ratio: 16 / 10; flex: none; } .post.feature .post-body { padding: 22px 24px 24px; } }

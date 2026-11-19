@@ -145,12 +145,16 @@ p { margin: 0; }
 
 /* Proof strip */
 .proof { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
 .proof li { padding: 22px 20px; border-left: 1px solid var(--line); }
 .proof li:first-child { border-left: 0; padding-left: 0; }
 .proof b { display: block; font-family: var(--display); font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; }
 .proof span { color: var(--ink-soft); font-size: 0.95rem; }
-@media (max-width: 860px) { .proof ul { grid-template-columns: 1fr 1fr; } .proof li { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); } .proof li:nth-child(-n+2) { border-top: 0; } }
+.stars { display: block; width: 100px; height: 20px; margin: 6px 0 4px; --gold: #F2A900;
+  background: linear-gradient(90deg, var(--gold) var(--pct), var(--line) var(--pct));
+  -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%2024'%3E%3Cpath%20transform='translate(0%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(24%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(48%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(72%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(96%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%;
+  mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%2024'%3E%3Cpath%20transform='translate(0%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(24%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(48%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(72%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(96%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%; }
+@media (max-width: 1100px) { .proof ul { grid-template-columns: 1fr 1fr; } .proof li { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); } .proof li:nth-child(-n+2) { border-top: 0; } }
 @media (max-width: 420px) { .proof ul { grid-template-columns: 1fr; } .proof li:nth-child(2) { border-top: 1px solid var(--line); } }
 
 section { padding: 84px 0; }
@@ -389,7 +393,8 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 <div class="proof">
   <div class="wrap">
     <ul>
-      <li><b>4.8 on Google</b><span>Average across 34 patient reviews</span></li>
+      <li><b>4.4 on Google</b><i class="stars" style="--pct:88.3%" role="img" aria-label="Rated 4.4 out of 5 stars"></i><span>Across 58 patients</span></li>
+      <li><b>4.71 on Zocdoc</b><i class="stars" style="--pct:93.5%" role="img" aria-label="Rated 4.71 out of 5 stars"></i><span>By over 190 patients</span></li>
       <li><b>da Vinci robotic surgery</b><span>Smaller incisions, shorter recovery</span></li>
       <li><b>New Jersey Top Doctor</b><span>Dr. Aiman Shilad, MD</span></li>
       <li><b>Evening appointments</b><span>Open until 6 pm Tuesdays and Thursdays</span></li>
@@ -555,7 +560,7 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 
 <section class="reviews" id="reviews">
   <div class="wrap rev-grid">
-    <p class="score">4.8<small>out of 5 on Google, 34 reviews</small></p>
+    <p class="score">4.4<small>out of 5 on Google, 58 reviews</small></p>
     <div class="rev-copy">
       <h2>Patients say they feel heard here.</h2>
       <p class="lede">Reviews most often mention the front desk, the care during pregnancy and how thoroughly questions get answered. Read them in patients' own words.</p>

@@ -47,11 +47,6 @@ p { margin: 0; }
 .btn-light { background: var(--paper); color: var(--ink); }
 .btn-light:hover { background: var(--white); }
 
-/* Utility bar */
-.util { background: var(--ink); color: var(--paper); font-size: 0.92rem; }
-.util .wrap { display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; padding-top: 9px; padding-bottom: 9px; }
-.util a { color: var(--paper); font-weight: 600; }
-.util-links { display: flex; flex-wrap: wrap; gap: 6px 22px; }
 
 /* Header */
 .pinned { position: sticky; top: 0; z-index: 20; }

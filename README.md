@@ -9,6 +9,7 @@ index.html                 Homepage
 endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
 fibroids/index.html        Uterine fibroids condition page (served at /fibroids/)
 pelvic-pain/index.html     Pelvic pain condition page (served at /pelvic-pain/)
+about-us/index.html        About us / meet our team (served at /about-us/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

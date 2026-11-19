@@ -385,3 +385,16 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .stat-num { font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 5vw, 3.6rem); line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
 @media (max-width: 860px) { .stats { grid-template-columns: 1fr; } }
 .photo-about { min-height: 0; aspect-ratio: 3 / 2; margin-top: 8px; }
+.page-hero-text .page-hero-copy { max-width: 760px; }
+.chips.jump { margin-top: 6px; }
+.bio-long { align-items: start; }
+.bio-long .ph { position: sticky; top: 150px; }
+.bio-long .bio h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
+.bio-long .bio h3 { margin-top: 10px; }
+.bio-long .bio > p:not(.role):not(.eyebrow) { color: var(--ink-soft); max-width: 68ch; }
+.team-photo { margin: 0; display: grid; gap: 14px; }
+.team-photo .slot { min-height: 0; aspect-ratio: 3 / 2; max-height: 680px; width: 100%; }
+.team-photo figcaption { color: var(--ink-soft); font-size: 0.98rem; }
+.nav a[aria-current="page"]:not(.btn) { border-bottom-color: var(--plum); }
+@media (max-width: 760px) { .bio-long .ph { position: static; } }
+.person.solo.bio-long .bio > p.eyebrow { color: var(--plum); }

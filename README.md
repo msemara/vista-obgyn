@@ -19,6 +19,8 @@ fourth-trimester-fridays/  Fourth Trimester Friday postpartum group, with a week
                            .ics calendar file (served at /fourth-trimester-fridays/)
 prenatal-preparedness-class/
                            Prenatal Preparedness Class (served at /prenatal-preparedness-class/)
+childbirth-education-class/
+                           Childbirth Education class (served at /childbirth-education-class/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

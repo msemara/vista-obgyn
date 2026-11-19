@@ -473,3 +473,5 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .back-link, .more-link { font-weight: 700; text-decoration: none; }
 .back-link:hover, .more-link:hover { text-decoration: underline; }
 @media (max-width: 420px) { .details-card { grid-template-columns: 1fr; } .details-card div:nth-child(2) { border-top: 1px solid var(--line); } .details-card div:nth-child(even) { border-left: 0; } }
+.past-note { font-size: 0.95rem; color: var(--ink-soft); font-style: italic; }
+.page-hero-photo.is-wide { height: auto; min-height: 0; aspect-ratio: 745 / 400; align-self: center; border-radius: 18px; }

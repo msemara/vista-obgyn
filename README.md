@@ -17,6 +17,8 @@ important-resources/index.html
 events/index.html          Upcoming and past events (served at /events/)
 fourth-trimester-fridays/  Fourth Trimester Friday postpartum group, with a weekly
                            .ics calendar file (served at /fourth-trimester-fridays/)
+prenatal-preparedness-class/
+                           Prenatal Preparedness Class (served at /prenatal-preparedness-class/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

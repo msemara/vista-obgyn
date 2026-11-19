@@ -398,3 +398,7 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .nav a[aria-current="page"]:not(.btn) { border-bottom-color: var(--plum); }
 @media (max-width: 760px) { .bio-long .ph { position: static; } }
 .person.solo.bio-long .bio > p.eyebrow { color: var(--plum); }
+.pull { margin: 8px 0 0; display: grid; gap: 10px; }
+.pull .quote { font-size: 1.35rem; max-width: 40ch; }
+.pull figcaption { padding-left: 19px; font-weight: 700; color: var(--plum); }
+.pull figcaption::before { content: "\2014\00a0"; }

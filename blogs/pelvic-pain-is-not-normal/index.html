@@ -81,11 +81,27 @@
   <div class="wrap">
     <a class="brand" href="/" aria-label="Vista Women's Health home">Vista Women's Health<small>OB/GYN · Minimally Invasive Surgery</small></a>
     <nav class="nav" aria-label="Main">
-      <a href="/#gynecology">Gynecology</a>
-      <a href="/#surgery">Minimally Invasive Surgery</a>
-      <a href="/#maternity">Pregnancy Care</a>
-      <a href="/classes/">Classes</a>
       <a href="/about-us/">About Us</a>
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-gynecology">Gynecology</button>
+        <ul class="nav-menu" id="menu-gynecology">
+          <li><a href="/our-gynecology-services/">Services</a></li>
+          <li><a href="/endometriosis/">Endometriosis</a></li>
+          <li><a href="/fibroids/">Fibroids</a></li>
+          <li><a href="/pelvic-pain/">Pelvic Pain</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-maternity">Maternity</button>
+        <ul class="nav-menu" id="menu-maternity">
+          <li><a href="/our-maternity-services/">Services</a></li>
+          <li><a href="/doula-support/">Doula Support</a></li>
+          <li><a href="/important-resources/">Important Resources</a></li>
+        </ul>
+      </div>
+      <a href="/classes/">Classes</a>
+      <a href="/blogs/" aria-current="page">Blog</a>
+      <a href="/events/">Events</a>
       <a class="btn btn-outline" href="https://www.onpatient.com/">Patient portal</a>
       <a class="btn btn-primary" href="https://www.zocdoc.com/practice/vista-womens-health-102661">Book a visit</a>
     </nav>
@@ -203,5 +219,6 @@
   <a class="btn btn-ghost" href="tel:+19736559662">Call</a>
   <a class="btn btn-primary" href="https://www.zocdoc.com/practice/vista-womens-health-102661">Book online</a>
 </div>
+<script src="/js/site.js" defer></script>
 </body>
 </html>

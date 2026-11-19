@@ -1,0 +1,84 @@
+{
+  "redirects": [
+    {
+      "source": "/endometriosis-symptoms-treatment-and-care-options",
+      "destination": "/blogs/endometriosis-symptoms-treatment-and-care-options/",
+      "permanent": true
+    },
+    {
+      "source": "/endometriosis-symptoms-treatment-and-care-options/",
+      "destination": "/blogs/endometriosis-symptoms-treatment-and-care-options/",
+      "permanent": true
+    },
+    {
+      "source": "/pelvic-pain-is-not-normal",
+      "destination": "/blogs/pelvic-pain-is-not-normal/",
+      "permanent": true
+    },
+    {
+      "source": "/pelvic-pain-is-not-normal/",
+      "destination": "/blogs/pelvic-pain-is-not-normal/",
+      "permanent": true
+    },
+    {
+      "source": "/the-benefits-of-minimally-invasive-gynecology-surgery",
+      "destination": "/blogs/the-benefits-of-minimally-invasive-gynecology-surgery/",
+      "permanent": true
+    },
+    {
+      "source": "/the-benefits-of-minimally-invasive-gynecology-surgery/",
+      "destination": "/blogs/the-benefits-of-minimally-invasive-gynecology-surgery/",
+      "permanent": true
+    },
+    {
+      "source": "/welcome-to-fourth-trimester-friday",
+      "destination": "/blogs/welcome-to-fourth-trimester-friday/",
+      "permanent": true
+    },
+    {
+      "source": "/welcome-to-fourth-trimester-friday/",
+      "destination": "/blogs/welcome-to-fourth-trimester-friday/",
+      "permanent": true
+    },
+    {
+      "source": "/endometriosis-unveiling-the-silent-struggle",
+      "destination": "/blogs/endometriosis-unveiling-the-silent-struggle/",
+      "permanent": true
+    },
+    {
+      "source": "/endometriosis-unveiling-the-silent-struggle/",
+      "destination": "/blogs/endometriosis-unveiling-the-silent-struggle/",
+      "permanent": true
+    },
+    {
+      "source": "/key-components-of-creating-a-postive-healthy-pregnancy",
+      "destination": "/blogs/key-components-of-creating-a-postive-healthy-pregnancy/",
+      "permanent": true
+    },
+    {
+      "source": "/key-components-of-creating-a-postive-healthy-pregnancy/",
+      "destination": "/blogs/key-components-of-creating-a-postive-healthy-pregnancy/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-uterine-fibroids-causes-symptoms-and-treatments",
+      "destination": "/blogs/understanding-uterine-fibroids-causes-symptoms-and-treatments/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-uterine-fibroids-causes-symptoms-and-treatments/",
+      "destination": "/blogs/understanding-uterine-fibroids-causes-symptoms-and-treatments/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blogs/",
+      "permanent": true
+    }
+  ]
+}

@@ -21,8 +21,9 @@ prenatal-preparedness-class/
                            Prenatal Preparedness Class (served at /prenatal-preparedness-class/)
 childbirth-education-class/
                            Childbirth Education class (served at /childbirth-education-class/)
-blogs/index.html           Blog listing (served at /blogs/). Post links use the old
-                           site's URLs; the posts themselves are not migrated yet.
+blogs/index.html           Blog listing (served at /blogs/)
+blogs/<post>/index.html    The seven blog posts (served at /blogs/<post>/)
+vercel.json                Permanent redirects from the old blog post URLs and /blog/
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html

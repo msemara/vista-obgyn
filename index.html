@@ -150,6 +150,9 @@ p { margin: 0; }
 .proof li:first-child { border-left: 0; padding-left: 0; }
 .proof b { display: block; font-family: var(--display); font-size: 1.5rem; letter-spacing: -0.02em; line-height: 1.1; }
 .proof span { color: var(--ink-soft); font-size: 0.95rem; }
+.proof-link { display: block; color: inherit; text-decoration: none; }
+.proof-link b::after { content: " \2192"; color: var(--plum); font-size: 0.8em; }
+.proof-link:hover b { text-decoration: underline; text-decoration-color: var(--plum); text-underline-offset: 4px; }
 .stars { display: block; width: 100px; height: 20px; margin: 6px 0 4px; --gold: #F2A900;
   background: linear-gradient(90deg, var(--gold) var(--pct), var(--line) var(--pct));
   -webkit-mask: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%2024'%3E%3Cpath%20transform='translate(0%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(24%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(48%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(72%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3Cpath%20transform='translate(96%200)'%20d='M12%202l3.09%206.26L22%209.27l-5%204.87%201.18%206.88L12%2017.77l-6.18%203.25L7%2014.14%202%209.27l6.91-1.01z'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%;
@@ -416,8 +419,8 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 <div class="proof">
   <div class="wrap">
     <ul>
-      <li><b>4.4 on Google</b><i class="stars" style="--pct:88.3%" role="img" aria-label="Rated 4.4 out of 5 stars"></i><span>Across 58 patients</span></li>
-      <li><b>4.71 on Zocdoc</b><i class="stars" style="--pct:93.5%" role="img" aria-label="Rated 4.71 out of 5 stars"></i><span>By over 190 patients</span></li>
+      <li><a class="proof-link" href="https://www.google.com/maps/search/?api=1&amp;query=Vista+Women%27s+Health+PA+Montclair+NJ"><b>4.4 on Google</b><i class="stars" style="--pct:88.3%" role="img" aria-label="Rated 4.4 out of 5 stars"></i><span>Across 58 patients</span></a></li>
+      <li><a class="proof-link" href="https://www.zocdoc.com/doctor/aiman-shilad-md-471450"><b>4.71 on Zocdoc</b><i class="stars" style="--pct:93.5%" role="img" aria-label="Rated 4.71 out of 5 stars"></i><span>By over 190 patients</span></a></li>
       <li><b>da Vinci robotic surgery</b><span>Smaller incisions, shorter recovery</span></li>
       <li><b>New Jersey Top Doctor</b><span>Dr. Aiman Shilad, MD</span></li>
       <li><b>Evening appointments</b><span>Open until 6 pm Tuesdays and Thursdays</span></li>

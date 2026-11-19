@@ -21,6 +21,7 @@ Photos used by `index.html`. Each one is cropped to its slot and saved as an opt
 | `exam-room.jpg` | Gallery under Dr. Shilad | As supplied |
 | `ultrasound.jpg` | Gallery under Dr. Shilad | As supplied |
 | `band.jpg` | Full-width band | As supplied |
-| `infections.jpg` | Conditions tile | **Placeholder** — needs a real photo |
+| `infections.jpg` | Conditions tile | Hand, syringe and vial, 4:5 |
+| `harries-pavilion.jpg` | Location card | As supplied |
 
-Slots still marked "Photo slot" in `index.html` with no file yet: the operating room / da Vinci console (surgery section) and the Harries Pavilion entrance (location section).
+The one slot still marked "Photo slot" in `index.html` is the operating room / da Vinci console in the surgery section.

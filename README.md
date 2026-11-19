@@ -7,6 +7,7 @@ Website for Vista Women's Health, an OB/GYN and minimally invasive gynecologic s
 ```
 index.html                 Homepage
 endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
+fibroids/index.html        Uterine fibroids condition page (served at /fibroids/)
 css/site.css               Shared styles for every page
 img/                       Photography referenced by the pages
 ```

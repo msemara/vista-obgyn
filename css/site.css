@@ -377,3 +377,10 @@ footer { background: var(--ink); color: #C9D8D2; padding: 56px 0 96px; font-size
 .class-list li { padding: 14px 0; border-bottom: 1px solid var(--line); font-family: var(--display); font-weight: 700; font-size: 1.1rem; line-height: 1.25; }
 .note { color: var(--ink-soft); font-size: 0.98rem; }
 .photo-wide { min-height: 0; aspect-ratio: 745 / 345; align-self: center; }
+.stats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.stats li { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 26px; display: grid; gap: 10px; align-content: start; }
+.stats li p:last-child { color: var(--ink-soft); font-size: 0.98rem; }
+.stat-label { font-weight: 700; font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--plum); }
+.stat-num { font-family: var(--display); font-weight: 800; font-size: clamp(2.6rem, 5vw, 3.6rem); line-height: 1; letter-spacing: -0.03em; color: var(--ink); }
+@media (max-width: 860px) { .stats { grid-template-columns: 1fr; } }
+.photo-about { min-height: 0; aspect-ratio: 3 / 2; margin-top: 8px; }

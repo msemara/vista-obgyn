@@ -5,13 +5,42 @@ Website for Vista Women's Health, an OB/GYN and minimally invasive gynecologic s
 ## Structure
 
 ```
-index.html      Homepage (static HTML + inline CSS, no build step)
-img/            Photography referenced by the pages
+index.html                 Homepage
+endometriosis/index.html   Endometriosis condition page (served at /endometriosis/)
+fibroids/index.html        Uterine fibroids condition page (served at /fibroids/)
+pelvic-pain/index.html     Pelvic pain condition page (served at /pelvic-pain/)
+about-us/index.html        About us / meet our team (served at /about-us/)
+classes/index.html         Childbirth and newborn classes (served at /classes/)
+doula-support/index.html   Doula support (served at /doula-support/)
+important-resources/index.html
+                           Parent resources with external links (served at /important-resources/)
+events/index.html          Upcoming and past events (served at /events/)
+fourth-trimester-fridays/  Fourth Trimester Friday postpartum group, with a weekly
+                           .ics calendar file (served at /fourth-trimester-fridays/)
+prenatal-preparedness-class/
+                           Prenatal Preparedness Class (served at /prenatal-preparedness-class/)
+childbirth-education-class/
+                           Childbirth Education class (served at /childbirth-education-class/)
+blogs/index.html           Blog listing (served at /blogs/)
+blogs/<post>/index.html    The seven blog posts (served at /blogs/<post>/)
+vercel.json                Permanent redirects from the old blog post URLs and /blog/
+our-gynecology-services/index.html
+                           Gynecology services page (served at /our-gynecology-services/)
+our-maternity-services/index.html
+                           Maternity services page (served at /our-maternity-services/)
+pcos/, infertility/, heavy-periods/, abnormal-pap-smear/,
+menopause/, hormone-therapy/, vaginal-infections/
+                           "Full page coming soon" placeholders (noindex). Replace
+                           each index.html with the full page when it is ready and
+                           remove the robots noindex tag.
+css/site.css               Shared styles for every page
+js/site.js                 Nav dropdowns and the phone/tablet menu (loaded on every page)
+img/                       Photography referenced by the pages
 ```
 
 ## Local preview
 
-No build tools are required. Serve the folder with any static server:
+No build tools are required. Pages use root-relative paths (`/css/site.css`, `/img/...`), so serve the folder rather than opening files directly:
 
 ```bash
 python3 -m http.server 8000

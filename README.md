@@ -11,6 +11,7 @@ fibroids/index.html        Uterine fibroids condition page (served at /fibroids/
 pelvic-pain/index.html     Pelvic pain condition page (served at /pelvic-pain/)
 about-us/index.html        About us / meet our team (served at /about-us/)
 classes/index.html         Childbirth and newborn classes (served at /classes/)
+doula-support/index.html   Doula support (served at /doula-support/)
 our-gynecology-services/index.html
                            Gynecology services page (served at /our-gynecology-services/)
 our-maternity-services/index.html
